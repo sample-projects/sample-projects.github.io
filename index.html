@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+  <title>Sample</title>
+</head>
+<body>
+  <div class="top-bar">
+    <svg xmlns="http://www.w3.org/2000/svg" class="button icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <line x1="4" y1="6" x2="20" y2="6"></line>
+      <line x1="4" y1="12" x2="20" y2="12"></line>
+      <line x1="4" y1="18" x2="20" y2="18"></line>
+    </svg>
+    <p>Math</p>
+    <svg xmlns="http://www.w3.org/2000/svg" class="button icon icon-tabler icon-tabler-plus" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <line x1="12" y1="5" x2="12" y2="19"></line>
+      <line x1="5" y1="12" x2="19" y2="12"></line>
+   </svg>
+  </div>
+  <div class="container">
+    <div class="content">
+      <div class="scanner button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-scan" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M4 7v-1a2 2 0 0 1 2 -2h2"></path>
+          <path d="M4 17v1a2 2 0 0 0 2 2h2"></path>
+          <path d="M16 4h2a2 2 0 0 1 2 2v1"></path>
+          <path d="M16 20h2a2 2 0 0 0 2 -2v-1"></path>
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+       </svg>
+      </div>
+      <div class="total student">
+        <p  class="total-number">60</p>
+        <p  class="total-name">Enrolled Students</p>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users total-logo" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <circle cx="9" cy="7" r="4"></circle>
+          <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          <path d="M21 21v-2a4 4 0 0 0 -3 -3.85"></path>
+       </svg>
+      </div>
+      <div class="total present">
+        <p  class="total-number">56</p>
+        <p  class="total-name">Total of Present</p>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users total-logo" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <circle cx="9" cy="7" r="4"></circle>
+          <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          <path d="M21 21v-2a4 4 0 0 0 -3 -3.85"></path>
+       </svg>
+      </div>
+      <div class="total absent">
+        <p  class="total-number">4</p>
+        <p  class="total-name">Total of Absent</p>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users total-logo" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <circle cx="9" cy="7" r="4"></circle>
+          <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          <path d="M21 21v-2a4 4 0 0 0 -3 -3.85"></path>
+       </svg>
+      </div>
+      <div class="tools">
+        <input type="text" name="date" id="date">
+        <div class="tool-group">
+          <label for="filter" class="button"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-adjustments-horizontal" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="14" cy="6" r="2"></circle>
+            <line x1="4" y1="6" x2="12" y2="6"></line>
+            <line x1="16" y1="6" x2="20" y2="6"></line>
+            <circle cx="8" cy="12" r="2"></circle>
+            <line x1="4" y1="12" x2="6" y2="12"></line>
+            <line x1="10" y1="12" x2="20" y2="12"></line>
+            <circle cx="17" cy="18" r="2"></circle>
+            <line x1="4" y1="18" x2="15" y2="18"></line>
+            <line x1="19" y1="18" x2="20" y2="18"></line>
+         </svg></label>
+          <button class="button"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-printer" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M17 17h2a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-14a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h2"></path>
+            <path d="M17 9v-4a2 2 0 0 0 -2 -2h-6a2 2 0 0 0 -2 2v4"></path>
+            <rect x="7" y="13" width="10" height="8" rx="2"></rect>
+        </svg></button>
+        </div>
+      </div>
+      <canvas id="present"></canvas>
+      <canvas id="absent"></canvas>
+      <canvas id="late"></canvas>
+    </div>
+  </div>
+  <div class="menu">
+    <div class="time group">
+      <div class="time-container">
+        <p id="time">2:52PM</p>
+        <p id="day">FRI</p>
+      </div>
+    </div>
+    <div class="class group">
+      <p>Classes</p>
+      <div class="class-button button selected">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M19 4v16h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12z"></path>
+          <path d="M19 16h-12a2 2 0 0 0 -2 2"></path>
+          <path d="M9 8h6"></path>
+       </svg>
+       Math
+      </div>
+    </div>
+    <div class="navigation group">
+      <div class="student-button button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <circle cx="9" cy="7" r="4"></circle>
+          <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          <path d="M21 21v-2a4 4 0 0 0 -3 -3.85"></path>
+       </svg>
+       Students
+      </div>
+      <div class="settings-button button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M19 6.873a2 2 0 0 1 1 1.747v6.536a2 2 0 0 1 -1.029 1.748l-6 3.833a2 2 0 0 1 -1.942 0l-6 -3.833a2 2 0 0 1 -1.029 -1.747v-6.537a2 2 0 0 1 1.029 -1.748l6 -3.572a2.056 2.056 0 0 1 2 0l6 3.573h-.029z"></path>
+          <circle cx="12" cy="12" r="3"></circle>
+       </svg>
+       Settings
+      </div>
+    </div>
+  </div>
+  <script src="dashboard.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

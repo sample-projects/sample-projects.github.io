@@ -14,8 +14,7 @@ const getCurrentTime = () => {
    var minute = date.getMinutes();
    minute = minute < 10 ? "0" + minute : minute;
    var AMPM = date.getHours() > 12 ? "PM" : "AM";
-   hour = hour > 12 ? hour - 12 : hour;
-   hour = hour == 0 ? 12 : hour;
+   hour = hour > 12 || hour == 0 ? Math.abs(hour - 12) : hour;
    var time = `${hour}:${minute}${AMPM}`;
    var day = day[date.getDay()];
 

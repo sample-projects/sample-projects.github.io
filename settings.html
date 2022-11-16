@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Math - Settings</title>
+</head>
+<body>
+    <div class="top-bar">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <line x1="4" y1="6" x2="20" y2="6"></line>
+          <line x1="4" y1="12" x2="20" y2="12"></line>
+          <line x1="4" y1="18" x2="20" y2="18"></line>
+        </svg>
+        <p>Math</p>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="10" cy="10" r="7"></circle>
+            <line x1="21" y1="21" x2="15" y2="15"></line>
+        </svg>
+    </div>
+    <div class="container settings-container">
+        <h1 style="justify-self: flex-center;">Settings</h1>
+        <div class="class-name">
+            <label for="class-label">Class Name</label>
+            <input type="text" name="class-label" id="class-label">
+        </div>
+        <div class="class-id">
+            <label for="class-id">Class ID</label>
+            <input type="text" name="class-id" id="class-id" disabled>
+        </div>
+        <div class="startEndTime">
+            <label for="classTime">Start Time</label>
+            <input type="time" name="classTime" id="startTime">
+            <span style="text-align: center;font-size: 1.5rem;">-</span>
+            <input type="time" name="classTime" id="endTime">
+        </div>
+        <div class="autoStartClass">
+          <label for="autoStartClass">Automatically Start Class</label>
+          <input type="checkbox" name="autoStartClass" id="autoStart">
+        </div>
+        <div class="autoEndClass">
+          <label for="autoEndClass">Automatically End Class</label>
+          <input type="checkbox" name="autoEndClass" id="autoEnd">
+        </div>
+        <div class="timeToDo">
+          <label for="timeToDo">Time to do Attendance</label>
+          <input type="text" name="timeToDo" id="timeToAttendance">
+          <p>mins.</p>
+        </div>
+        <div class="link">
+          Class Link
+        </div>
+    </div>
+    <div class="menu">
+        <div class="time group">
+          <div class="time-container">
+            <p id="time">2:52PM</p>
+            <p id="day">FRI</p>
+          </div>
+        </div>
+        <div class="class group">
+          <p>Classes</p>
+          <div class="class-button selected">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-book-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M19 4v16h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12z"></path>
+              <path d="M19 16h-12a2 2 0 0 0 -2 2"></path>
+              <path d="M9 8h6"></path>
+           </svg>
+           Math
+          </div>
+        </div>
+        <div class="navigation group">
+          <div class="student-button button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              <path d="M21 21v-2a4 4 0 0 0 -3 -3.85"></path>
+           </svg>
+           Students
+          </div>
+          <div class="settings-button button">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M19 6.873a2 2 0 0 1 1 1.747v6.536a2 2 0 0 1 -1.029 1.748l-6 3.833a2 2 0 0 1 -1.942 0l-6 -3.833a2 2 0 0 1 -1.029 -1.747v-6.537a2 2 0 0 1 1.029 -1.748l6 -3.572a2.056 2.056 0 0 1 2 0l6 3.573h-.029z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+           </svg>
+           Settings
+          </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -20,7 +20,6 @@ const getCurrentTime = () => {
 
    document.getElementById("time").innerText = time;
    document.getElementById("day").innerText = day;
-   console.log(time);
    setTimeout(getCurrentTime, 500);
 };
 const getCurrentDate = () => {
@@ -102,4 +101,4 @@ menuBtn.addEventListener("click", function () {
    return;
 });
 
-console.log(window.location.href);
+//console.log(window.location.href);
